@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SortingAlgorithmsTest.BubbleSortTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-05-18T20:13:13" hostname="mac.local" time="0.04">
+<testsuite name="SortingAlgorithmsTest.BubbleSortTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-05-18T21:15:33" hostname="mac.local" time="0.041">
   <properties/>
-  <testcase name="bubbleSort_withSortedTwoItemArray_returnsSameArray()" classname="SortingAlgorithmsTest.BubbleSortTest" time="0.032"/>
+  <testcase name="bubbleSort_withSortedTwoItemArray_returnsSameArray()" classname="SortingAlgorithmsTest.BubbleSortTest" time="0.033"/>
   <testcase name="swap_withUnsortedTwoItemArrayAndTheirIndexes_createsAReversedArray()" classname="SortingAlgorithmsTest.BubbleSortTest" time="0.004"/>
-  <testcase name="bubbleSort_withAnUnsortedThreeItemArray_returnsASortedArray()" classname="SortingAlgorithmsTest.BubbleSortTest" time="0.0"/>
-  <testcase name="bubbleSort_withSingleItemParam_returnsSameArray()" classname="SortingAlgorithmsTest.BubbleSortTest" time="0.0"/>
-  <testcase name="bubbleSort_withEmptyArray_returnsEmptyArray()" classname="SortingAlgorithmsTest.BubbleSortTest" time="0.0"/>
+  <testcase name="bubbleSort_withAnUnsortedThreeItemArray_returnsASortedArray()" classname="SortingAlgorithmsTest.BubbleSortTest" time="0.001"/>
+  <testcase name="bubbleSort_withSingleItemParam_returnsSameArray()" classname="SortingAlgorithmsTest.BubbleSortTest" time="0.001"/>
+  <testcase name="bubbleSort_withEmptyArray_returnsEmptyArray()" classname="SortingAlgorithmsTest.BubbleSortTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

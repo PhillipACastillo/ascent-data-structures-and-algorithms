@@ -8,5 +8,7 @@ LinkedList/LinkedList.java
  LinkedList.LinkedList
 LinkedList/Node.java
  LinkedList.Node
-SortingAlgorithms/Sort.java
- SortingAlgorithms.Sort
+SortingAlgorithms/QuickSort.java
+ SortingAlgorithms.QuickSort
+SortingAlgorithms/BubbleSort.java
+ SortingAlgorithms.BubbleSort

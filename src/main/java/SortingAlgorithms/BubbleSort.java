@@ -1,7 +1,7 @@
 package SortingAlgorithms;
 
-public class Sort {
-    public Sort() {
+public class BubbleSort {
+    public BubbleSort() {
     }
 
     public int[] bubbleSort(int[] array) {
