@@ -1,16 +1,16 @@
 package SortingAlgorithmsTest;
 
-import SortingAlgorithms.Sort;
+import SortingAlgorithms.BubbleSort;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BubbleSortTest {
-    Sort sort;
+public class BubbleBubbleSortTest {
+    BubbleSort sort;
 
     @BeforeEach
     void setUpSort() {
-        sort = new Sort();
+        sort = new BubbleSort();
     }
 
     @Test
@@ -38,7 +38,7 @@ public class BubbleSortTest {
     void swap_withUnsortedTwoItemArrayAndTheirIndexes_createsAReversedArray() {
         int[] unorderedArray = new int[]{6,5};
         int[] expected = new int[]{5,6};
-        Sort.swap(unorderedArray, 0, 1);
+        BubbleSort.swap(unorderedArray, 0, 1);
         assertArrayEquals(expected, unorderedArray);
     }
 
