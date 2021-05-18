@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StacksAndQueuesTest.StackTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-05-18T20:13:13" hostname="mac.local" time="0.007">
+<testsuite name="StacksAndQueuesTest.StackTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-05-18T21:15:33" hostname="mac.local" time="0.005">
   <properties/>
-  <testcase name="stack_popReturnsTheFirstValueForAStackWithTwoItems()" classname="StacksAndQueuesTest.StackTest" time="0.002"/>
-  <testcase name="stack_HasFirstField()" classname="StacksAndQueuesTest.StackTest" time="0.0"/>
-  <testcase name="stack_returnsTrueIfItsEmpty()" classname="StacksAndQueuesTest.StackTest" time="0.001"/>
-  <testcase name="stack_HasADefaultSizeOfZero()" classname="StacksAndQueuesTest.StackTest" time="0.0"/>
+  <testcase name="stack_popReturnsTheFirstValueForAStackWithTwoItems()" classname="StacksAndQueuesTest.StackTest" time="0.001"/>
+  <testcase name="stack_HasFirstField()" classname="StacksAndQueuesTest.StackTest" time="0.001"/>
+  <testcase name="stack_returnsTrueIfItsEmpty()" classname="StacksAndQueuesTest.StackTest" time="0.0"/>
+  <testcase name="stack_HasADefaultSizeOfZero()" classname="StacksAndQueuesTest.StackTest" time="0.001"/>
   <testcase name="stack_HasLastField()" classname="StacksAndQueuesTest.StackTest" time="0.0"/>
   <testcase name="stack_peekReturnsTheLastValueForAStackWithTwoItems()" classname="StacksAndQueuesTest.StackTest" time="0.0"/>
   <testcase name="stack_pushTwoItemsToStack()" classname="StacksAndQueuesTest.StackTest" time="0.001"/>

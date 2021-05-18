@@ -10,3 +10,5 @@ StacksAndQueuesTest/QueueTest.java
  StacksAndQueuesTest.QueueTest
 SortingAlgorithmsTest/BubbleSortTest.java
  SortingAlgorithmsTest.BubbleSortTest
+SortingAlgorithmsTest/QuickSortTest.java
+ SortingAlgorithmsTest.QuickSortTest
