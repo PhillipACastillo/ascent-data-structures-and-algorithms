@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Stack.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">phillip-data-structures-and-algorithms</a> &gt; <a href="index.source.html" class="el_package">StacksAndQueues</a> &gt; <span class="el_source">Stack.java</span></div><h1>Stack.java</h1><pre class="source lang-java linenums">package StacksAndQueues;
+
+<span class="fc" id="L3">public class Stack {</span>
+<span class="fc" id="L4">    private Node first = null;</span>
+<span class="fc" id="L5">    private Node last = null;</span>
+<span class="fc" id="L6">    private int size = 0;</span>
+
+    public boolean isEmpty() {
+<span class="pc bpc" id="L9" title="3 of 6 branches missed.">        if (size == 0 &amp;&amp; first == null &amp;&amp; last == null) {</span>
+<span class="fc" id="L10">            return true;</span>
+        }
+<span class="nc" id="L12">        return false;</span>
+    }
+
+    public void push(Object object) {
+<span class="fc" id="L16">        Node node = new Node();</span>
+<span class="fc" id="L17">        node.setValue(object);</span>
+
+<span class="fc bfc" id="L19" title="All 2 branches covered.">        if (this.first == null) {</span>
+<span class="fc" id="L20">            this.setFirst(node);</span>
+<span class="fc" id="L21">            this.last = this.first;</span>
+        } else {
+<span class="fc" id="L23">            Node originalFirst = this.first;</span>
+<span class="fc" id="L24">            this.setFirst(node);</span>
+<span class="fc" id="L25">            this.first.setNext(originalFirst);</span>
+        }
+<span class="fc" id="L27">        size += 1;</span>
+<span class="fc" id="L28">    }</span>
+
+    public Object peek() {
+<span class="pc bpc" id="L31" title="5 of 6 branches missed.">        if (size == 0 &amp;&amp; this.first == null &amp;&amp; this.last == null) {</span>
+<span class="nc" id="L32">            return null;</span>
+        }
+<span class="fc" id="L34">        return this.getFirst().getValue();</span>
+    }
+
+    public Object pop() {
+<span class="pc bpc" id="L38" title="5 of 6 branches missed.">        if (size == 0 &amp;&amp; this.first == null &amp;&amp; this.last == null) {</span>
+<span class="nc" id="L39">            return null;</span>
+        }
+
+<span class="fc" id="L42">        Object popped = this.getFirst().getValue();</span>
+<span class="pc bpc" id="L43" title="1 of 2 branches missed.">        if (this.first == this.last) {</span>
+<span class="nc" id="L44">            this.first = null;</span>
+<span class="nc" id="L45">            this.last = null;</span>
+        } else {
+<span class="fc" id="L47">            this.first = this.first.getNext();</span>
+        }
+<span class="fc" id="L49">        size -= 1;</span>
+<span class="fc" id="L50">        return popped;</span>
+    }
+
+    public Node getFirst() {
+<span class="fc" id="L54">        return first;</span>
+    }
+
+    public void setFirst(Node first) {
+<span class="fc" id="L58">        this.first = first;</span>
+<span class="fc" id="L59">    }</span>
+
+    public Node getLast() {
+<span class="fc" id="L62">        return last;</span>
+    }
+
+    public void setLast(Node last) {
+<span class="fc" id="L66">        this.last = last;</span>
+<span class="fc" id="L67">    }</span>
+
+    public int getSize() {
+<span class="fc" id="L70">        return size;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

@@ -1,6 +1,8 @@
 package StacksAndQueuesTest;
 
 import org.junit.jupiter.api.*;
+import StacksAndQueues.Queue;
+import StacksAndQueues.Node;
 
 import static org.junit.jupiter.api.Assertions.*;
 

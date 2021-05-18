@@ -3,6 +3,7 @@ package LinkedListTest;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import LinkedList.Node;
 
 public class NodeTest {
     @Test

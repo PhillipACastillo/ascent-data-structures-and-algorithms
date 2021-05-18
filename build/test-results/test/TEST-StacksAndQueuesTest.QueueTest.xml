@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StacksAndQueuesTest.QueueTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-05-18T20:13:13" hostname="mac.local" time="0.012">
+  <properties/>
+  <testcase name="queue_HasLastField()" classname="StacksAndQueuesTest.QueueTest" time="0.0"/>
+  <testcase name="queue_returnsTrueIfItsEmpty()" classname="StacksAndQueuesTest.QueueTest" time="0.0"/>
+  <testcase name="queue_addTwoItemsToQueue()" classname="StacksAndQueuesTest.QueueTest" time="0.001"/>
+  <testcase name="queue_HasADefaultSizeOfZero()" classname="StacksAndQueuesTest.QueueTest" time="0.0"/>
+  <testcase name="queue_addTwoItemsAndObtainCorrectLastItem()" classname="StacksAndQueuesTest.QueueTest" time="0.0"/>
+  <testcase name="queue_removeReturnsTheFirstItem()" classname="StacksAndQueuesTest.QueueTest" time="0.001"/>
+  <testcase name="queue_peekReturnsNullForEmptyQueue()" classname="StacksAndQueuesTest.QueueTest" time="0.001"/>
+  <testcase name="queue_peekReturnsTheFirstValueForAQueueWithTwoItems()" classname="StacksAndQueuesTest.QueueTest" time="0.0"/>
+  <testcase name="queue_removeReturnsNullForAnEmptyQueue()" classname="StacksAndQueuesTest.QueueTest" time="0.0"/>
+  <testcase name="queue_HasFirstField()" classname="StacksAndQueuesTest.QueueTest" time="0.001"/>
+  <testcase name="queue_removeSetsFirstAndLastToNullForQueueWithOneItem()" classname="StacksAndQueuesTest.QueueTest" time="0.0"/>
+  <testcase name="queue_removeSetsFirstAndLastToSameValueAfterRemoval()" classname="StacksAndQueuesTest.QueueTest" time="0.0"/>
+  <testcase name="queue_removeReturnsTheFirstValueForAQueueWithTwoItems()" classname="StacksAndQueuesTest.QueueTest" time="0.001"/>
+  <testcase name="queue_returnsFalseIfItsNotEmpty()" classname="StacksAndQueuesTest.QueueTest" time="0.001"/>
+  <testcase name="queue_addTwoItemsAndObtainCorrectFirstItem()" classname="StacksAndQueuesTest.QueueTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

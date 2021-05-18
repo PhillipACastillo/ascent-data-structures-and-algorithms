@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LinkedListTest.LinkedListTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2021-05-18T20:13:13" hostname="mac.local" time="0.018">
+  <properties/>
+  <testcase name="linkedList_getNthItemIndexOutOfBoundsException()" classname="LinkedListTest.LinkedListTest" time="0.002"/>
+  <testcase name="linkedList_deletesByIndexAtHead()" classname="LinkedListTest.LinkedListTest" time="0.0"/>
+  <testcase name="linkedList_deletesByIndexAtTail()" classname="LinkedListTest.LinkedListTest" time="0.0"/>
+  <testcase name="linkedList_addsANewObjectToAnEmptyLinkedList()" classname="LinkedListTest.LinkedListTest" time="0.001"/>
+  <testcase name="linkedList_getLastItemInListWhenItsEmpty()" classname="LinkedListTest.LinkedListTest" time="0.001"/>
+  <testcase name="linkedList_getFirstItemInList()" classname="LinkedListTest.LinkedListTest" time="0.001"/>
+  <testcase name="linkedList_addsANewObjectToALinkedListWithTwoItems()" classname="LinkedListTest.LinkedListTest" time="0.001"/>
+  <testcase name="linkedList_getNthItem()" classname="LinkedListTest.LinkedListTest" time="0.0"/>
+  <testcase name="node_HasADefaultSizeOfZero()" classname="LinkedListTest.LinkedListTest" time="0.0"/>
+  <testcase name="linkedList_deletesObjectAtHead()" classname="LinkedListTest.LinkedListTest" time="0.001"/>
+  <testcase name="linkedList_deletesObjectAtTail()" classname="LinkedListTest.LinkedListTest" time="0.0"/>
+  <testcase name="node_HasHeadField()" classname="LinkedListTest.LinkedListTest" time="0.0"/>
+  <testcase name="linkedList_deletesByIndexOutOfBounds()" classname="LinkedListTest.LinkedListTest" time="0.001"/>
+  <testcase name="node_HasTailField()" classname="LinkedListTest.LinkedListTest" time="0.0"/>
+  <testcase name="linkedList_getLastItemInList()" classname="LinkedListTest.LinkedListTest" time="0.0"/>
+  <testcase name="linkedlist_CanCreateANewLinkedList()" classname="LinkedListTest.LinkedListTest" time="0.0"/>
+  <testcase name="linkedList_getFirstItemInListWhenItsEmpty()" classname="LinkedListTest.LinkedListTest" time="0.001"/>
+  <testcase name="linkedList_returnsTrueIfItsEmpty()" classname="LinkedListTest.LinkedListTest" time="0.001"/>
+  <testcase name="linkedList_deletesByIndexAt1()" classname="LinkedListTest.LinkedListTest" time="0.0"/>
+  <testcase name="linkedList_containsTheStringHelloAtIndex2()" classname="LinkedListTest.LinkedListTest" time="0.001"/>
+  <testcase name="linkedList_deletesObjectAtIndex1()" classname="LinkedListTest.LinkedListTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LinkedList.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">phillip-data-structures-and-algorithms</a> &gt; <a href="index.source.html" class="el_package">LinkedList</a> &gt; <span class="el_source">LinkedList.java</span></div><h1>LinkedList.java</h1><pre class="source lang-java linenums">package LinkedList;
+
+<span class="fc" id="L3">public class LinkedList {</span>
+
+    private Node head;
+    private Node tail;
+<span class="fc" id="L7">    private int size = 0;</span>
+
+    public Node getHead() {
+<span class="fc" id="L10">        return head;</span>
+    }
+
+    public void setHead(Node head) {
+<span class="fc" id="L14">        this.head = head;</span>
+<span class="fc" id="L15">    }</span>
+
+    public Node getTail() {
+<span class="fc" id="L18">        return tail;</span>
+    }
+
+    public void setTail(Node tail) {
+<span class="fc" id="L22">        this.tail = tail;</span>
+<span class="fc" id="L23">    }</span>
+
+    public int getSize() {
+<span class="fc" id="L26">        return size;</span>
+    }
+
+    public boolean isEmpty() {
+<span class="pc bpc" id="L30" title="1 of 4 branches missed.">        if (this.size == 0 &amp;&amp; this.head == null) {</span>
+<span class="fc" id="L31">            return true;</span>
+        }
+<span class="fc" id="L33">        return false;</span>
+    }
+
+    public void add(Object object){
+        // init node
+<span class="fc" id="L38">        Node node = new Node();</span>
+<span class="fc" id="L39">        node.setValue(object);</span>
+
+        // set head &amp; tail
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        if(this.isEmpty())</span>
+        {
+<span class="fc" id="L44">            this.head = node;</span>
+        }else{
+<span class="fc" id="L46">            this.tail.setNext(node);</span>
+        }
+
+        //increase size
+<span class="fc" id="L50">        this.tail = node;</span>
+<span class="fc" id="L51">        size++;</span>
+<span class="fc" id="L52">    }</span>
+
+    public Object getFirst() {
+<span class="fc bfc" id="L55" title="All 2 branches covered.">        if (isEmpty()) {</span>
+<span class="fc" id="L56">            return null;</span>
+        }
+
+<span class="fc" id="L59">        return this.head.getValue();</span>
+    }
+
+    public Object getLast(){
+<span class="fc bfc" id="L63" title="All 2 branches covered.">        if (isEmpty()) {</span>
+<span class="fc" id="L64">            return null;</span>
+        }
+
+<span class="fc" id="L67">        return this.tail.getValue();</span>
+    }
+
+    public Object get(int index) throws IndexOutOfBoundsException{
+<span class="fc" id="L71">        Node current = this.head;</span>
+
+<span class="pc bpc" id="L73" title="1 of 4 branches missed.">        if (index &lt; 0 || index &gt; this.getSize() - 1) {</span>
+<span class="fc" id="L74">            throw new IndexOutOfBoundsException();</span>
+        }
+
+<span class="fc bfc" id="L77" title="All 2 branches covered.">        for (int i = 0; i &lt; index; i += 1) {</span>
+<span class="fc" id="L78">            current = current.getNext();</span>
+        }
+<span class="fc" id="L80">        return current.getValue();</span>
+    }
+
+    public int contains(Object object){
+<span class="fc" id="L84">        Node current = this.head;</span>
+
+<span class="pc bpc" id="L86" title="1 of 2 branches missed.">        for(int i = 0; i&lt; this.getSize(); i++){</span>
+<span class="fc bfc" id="L87" title="All 2 branches covered.">            if(current.getValue() == object){</span>
+<span class="fc" id="L88">              return i;</span>
+            }
+<span class="fc" id="L90">            current = current.getNext();</span>
+
+        }
+<span class="nc" id="L93">        return -1;</span>
+    }
+
+    public void delete(Object object){
+<span class="fc" id="L97">        Node current = this.head;</span>
+<span class="fc" id="L98">        Node previous = current;</span>
+
+<span class="fc bfc" id="L100" title="All 2 branches covered.">        for(int i = 0; i &lt; this.getSize(); i++) {</span>
+<span class="fc bfc" id="L101" title="All 2 branches covered.">            if (current.getValue() == object) {</span>
+<span class="fc bfc" id="L102" title="All 2 branches covered.">                if (i == 0) {</span>
+<span class="fc" id="L103">                    this.setHead(this.head.getNext());</span>
+<span class="fc bfc" id="L104" title="All 2 branches covered.">                } else if (i == this.getSize() - 1) {</span>
+<span class="fc" id="L105">                    this.setTail(previous);</span>
+                } else {
+<span class="fc" id="L107">                    previous.setNext(current.getNext());</span>
+                }
+            }
+<span class="fc" id="L110">            previous = current;</span>
+<span class="fc" id="L111">            current = current.getNext();</span>
+        }
+<span class="fc" id="L113">        size -= 1;</span>
+<span class="fc" id="L114">    }</span>
+
+    public void deleteByIndex(int index){
+        try {
+<span class="fc" id="L118">            this.get(index);</span>
+<span class="fc" id="L119">        } catch (IndexOutOfBoundsException iobex) {</span>
+//            System.out.println(iobex.getMessage());
+<span class="fc" id="L121">            throw new IndexOutOfBoundsException();</span>
+<span class="fc" id="L122">        }</span>
+
+
+<span class="fc" id="L125">        Node current = this.head;</span>
+<span class="fc" id="L126">        Node previous = current;</span>
+
+<span class="fc bfc" id="L128" title="All 2 branches covered.">        for(int i = 0; i &lt; this.getSize(); i++) {</span>
+<span class="fc bfc" id="L129" title="All 2 branches covered.">            if (i == index) {</span>
+<span class="fc bfc" id="L130" title="All 2 branches covered.">                if (i == 0) {</span>
+<span class="fc" id="L131">                    this.setHead(this.head.getNext());</span>
+<span class="fc bfc" id="L132" title="All 2 branches covered.">                } else if (i == this.getSize() - 1) {</span>
+<span class="fc" id="L133">                    this.setTail(previous);</span>
+                } else {
+<span class="fc" id="L135">                    previous.setNext(current.getNext());</span>
+                }
+            }
+<span class="fc" id="L138">            previous = current;</span>
+<span class="fc" id="L139">            current = current.getNext();</span>
+        }
+<span class="fc" id="L141">        size -= 1;</span>
+<span class="fc" id="L142">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
